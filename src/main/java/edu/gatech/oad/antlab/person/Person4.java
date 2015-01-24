@@ -1,4 +1,4 @@
-/*package edu.gatech.oad.antlab.person;*/
+package edu.gatech.oad.antlab.person;
 
 /**
  *  A simple class for person 4
@@ -32,7 +32,7 @@ public class Person4 {
     private String calc(String input) {
       char[] array = new char[input.length()];
       for (int i = 0, n = input.length(); i < n; i++) {      
-    	  	char c = input.charAt(i);
+    	    char c = input.charAt(i);
             char newChar = (char)(c+1);
             System.out.println(newChar);
             array[i] = newChar;
@@ -53,15 +53,6 @@ public class Person4 {
       return name + calc(input);
       
     }
-    
-    public static void main(String[] args) {
-        Person4 person = new Person4("sarah");
-        String newTest = person.toString("abc123");
-        String testCalc = person.calc("abc123");
-        System.out.println(testCalc);
-        System.out.println(newTest);
-
-     }
     
   
 }
