@@ -22,6 +22,10 @@ public class Person4 {
   }
 
 
+
+    public Person4(String pname) {
+        name = pname;
+    }
     /**
      * This method should return a string
      * where each character is 1 greater 
@@ -35,17 +39,12 @@ public class Person4 {
     private String calc(String input) {
       char[] array = new char[input.length()];
       for (int i = 0, n = input.length(); i < n; i++) {      
-<<<<<<< Updated upstream
     	    char c = input.charAt(i);
             char newChar = (char)(c+1);
-=======
-    	  	char c = input.charAt(i);
-            char newChar = (char) (c + 1);
-            System.out.println(newChar);
->>>>>>> Stashed changes
             array[i] = newChar;
         }
       return new String(array);
+
 
     }
 
@@ -61,12 +60,6 @@ public class Person4 {
         return name + calc(input);
 
     }
-<<<<<<< Updated upstream
-    
-  
-=======
 
-
->>>>>>> Stashed changes
 }
 
