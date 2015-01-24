@@ -17,11 +17,6 @@ public class Person4 {
      * @param pname the person's real name
      */
 
-  public Person4(String pname) {
-	  name = pname;
-  }
-
-
 
     public Person4(String pname) {
         name = pname;
@@ -37,14 +32,14 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      char[] array = new char[input.length()];
-      for (int i = 0, n = input.length(); i < n; i++) {      
-    	    char c = input.charAt(i);
+        char[] array = new char[input.length()];
+        for (int i = 0, n = input.length(); i < n; i++) {
+            char c = input.charAt(i);
             char newChar = (char)(c+1);
             array[i] = newChar;
         }
-      return new String(array);
 
+      return new String(array);
 
     }
 
