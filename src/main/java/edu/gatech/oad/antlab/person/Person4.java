@@ -4,21 +4,24 @@ package edu.gatech.oad.antlab.person;
  *  A simple class for person 4
  *  returns their name and a
  *  modified string 
- *  
+ *
  *  @author Bob
  *  @version 1.1
  */
 public class Person4 {
-  /** Holds the persons real name */
-  private String name;
+    /** Holds the persons real name */
+    private String name;
     /**
      * The constructor, takes in the persons
      * name
      * @param pname the person's real name
      */
+
   public Person4(String pname) {
 	  name = pname;
   }
+
+
     /**
      * This method should return a string
      * where each character is 1 greater 
@@ -32,14 +35,20 @@ public class Person4 {
     private String calc(String input) {
       char[] array = new char[input.length()];
       for (int i = 0, n = input.length(); i < n; i++) {      
+<<<<<<< Updated upstream
     	    char c = input.charAt(i);
             char newChar = (char)(c+1);
+=======
+    	  	char c = input.charAt(i);
+            char newChar = (char) (c + 1);
+            System.out.println(newChar);
+>>>>>>> Stashed changes
             array[i] = newChar;
         }
-     
       return new String(array);
+
     }
-    
+
     /**
      * Return a string rep of this object
      * that varies with an input string
@@ -49,10 +58,15 @@ public class Person4 {
      *         object
      */
     public String toString(String input) {
-      return name + calc(input);
-      
+        return name + calc(input);
+
     }
+<<<<<<< Updated upstream
     
   
+=======
+
+
+>>>>>>> Stashed changes
 }
 
