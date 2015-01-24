@@ -34,7 +34,6 @@ public class Person4 {
       for (int i = 0, n = input.length(); i < n; i++) {      
     	    char c = input.charAt(i);
             char newChar = (char)(c+1);
-            System.out.println(newChar);
             array[i] = newChar;
         }
      
