@@ -13,6 +13,9 @@ jar {
         )
     }
 }
+repositories {
+    mavenCentral()
+}
 
 
 dependencies {
