@@ -8,14 +8,12 @@ jar {
     manifest {
         attributes (
                 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
-                'Class-Path': '../../lib/resources.jar'
+                'Class-Path': '../../lib/resources.jar',
+                'Implementation-Title': 'M2'
         )
     }
 }
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile files('lib/resources.jar')
