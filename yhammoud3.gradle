@@ -1,6 +1,5 @@
 defaultTasks 'build'
 
-// Import java tasks
 apply plugin: 'java'
 
 dependencies {
