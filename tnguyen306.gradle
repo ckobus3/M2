@@ -11,6 +11,7 @@ jar {
                 'Class-Path': '../../lib/resources.jar',
                 'Implementation-Title': 'M2'
         )
+
     }
 }
 repositories {
